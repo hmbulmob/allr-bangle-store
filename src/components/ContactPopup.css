@@ -1,0 +1,38 @@
+.contact-popup {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 280px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  z-index: 9999;
+  font-family: 'Playfair Display', serif;
+  border-left: 4px solid #a24848;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-header button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-popup p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.contact-popup a {
+  color: #a24848;
+  text-decoration: none;
+  font-weight: 500;
+}

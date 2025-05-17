@@ -1,0 +1,83 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #7a1e1e;
+  padding: 16px 40px;
+  border-bottom: 1px solid #e0c66d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 42px;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: #7a1e1e;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #7a1e1e;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: -4px;
+  left: 0;
+  background-color: #e0c66d;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e0c66d;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.header-right .cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #7a1e1e;
+  transition: color 0.3s ease;
+}
+
+.header-right .cart-icon:hover {
+  color: #e0c66d;
+}
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
